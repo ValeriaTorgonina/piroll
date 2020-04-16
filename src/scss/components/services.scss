@@ -1,0 +1,75 @@
+@import "../variables.scss";
+
+.services {
+    padding-top: 95px;
+    padding-bottom: 35px;
+    background: $lightgray1;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        max-width: 250px;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    &__sub-title {
+        display: block;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+    &__description {
+        font-size: 16px;
+        color: $font-lightgray;
+        line-height: 24px;
+    }
+
+    &__icon {
+        width: 40px;
+        height: 40px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        &--diamond {
+            background-image: url("../../img/icons/diamond.svg");
+        }
+
+        &--arc {
+            background-image: url("../../img/icons/arc.svg");
+        }
+
+        &--phone {
+            background-image: url("../../img/icons/phone.svg");
+        }
+
+        &--joy {
+            background-image: url("../../img/icons/joy.svg");
+        }
+
+        &--plane {
+            background-image: url("../../img/icons/plane.svg");
+        }
+
+        &--star {
+            background-image: url("../../img/icons/star.svg");
+        }
+
+        &--magic {
+            background-image: url("../../img/icons/magic-wand.svg");
+        }
+
+        &--paint {
+            background-image: url("../../img/icons/paint-bucket.svg");
+        }
+    }
+}

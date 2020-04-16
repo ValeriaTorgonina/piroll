@@ -1,0 +1,71 @@
+@import "../variables.scss";
+
+.skills {
+    display: flex;
+    &__content {
+        flex-grow: 1;
+        width: 50%;
+        padding-top: 160px;
+        background: $lightgray;
+
+        .container {
+            max-width: 585px;
+            margin: 0;
+            margin-left: auto;
+            padding-right: 85px;
+            box-sizing: border-box;
+        }
+
+        .title {
+            text-align: left;
+        }
+    }
+
+    &__item-text,
+    &__item-percent {
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    &__item-text {
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+
+    &__item-decor {
+        position: relative;
+        width: 100%;
+        height: 4px;
+        margin-bottom: 35px;
+        background: $lightgray3;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 4px;
+            background: $lightblue;
+        }
+
+        &--first:before {
+            width: 75%;
+        }
+
+        &--second:before {
+            width: 90%;
+        }
+
+        &--third:before {
+            width: 65%;
+        }
+    }
+
+    &__image {
+        flex-grow: 1;
+        width: 50%;
+        height: 570px;
+        background: $lightgray2;
+    }
+}

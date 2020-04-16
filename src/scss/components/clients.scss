@@ -1,0 +1,15 @@
+.clients {
+    padding: 65px 0;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        width: 130px;
+        height: 65px;
+        margin: 0 35px;
+        object-fit: contain;
+    }
+}

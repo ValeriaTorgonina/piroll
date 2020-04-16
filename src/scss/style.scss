@@ -1,1 +1,19 @@
 @import "../../node_modules/normalize-scss/sass/normalize/_import-now";
+
+@import "./components/common.scss";
+
+@import "./components/containers.scss";
+@import "./components/header.scss";
+@import "./components/navigation.scss";
+@import "./components/footer.scss";
+
+@import "./components/intro.scss";
+@import "./components/about-us.scss";
+@import "./components/skills.scss";
+@import "./components/achievement.scss";
+@import "./components/work.scss";
+@import "./components/process.scss";
+@import "./components/services.scss";
+@import "./components/testimonials.scss";
+@import "./components/clients.scss";
+@import "./components/contact.scss";

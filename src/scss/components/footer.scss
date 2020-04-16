@@ -1,0 +1,56 @@
+@import "../variables.scss";
+
+.main-footer {
+    padding: 95px 0;
+    background: $darkgray1;
+    color: white;
+    font-size: 15px;
+
+    a {
+        color: white;
+        opacity: 0.6; 
+        transition: 0.3s;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__company-name {
+        display: block;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    &__company-copyright {
+        opacity: 0.6;
+    }
+
+    &__email {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    &__menu-list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 170px;
+        height: 90px;
+    }
+
+    &__menu-item,
+    &__socials-item {
+        margin-right: 30px;
+        margin-bottom: 5px;
+    }
+
+    &__menu-item {
+        margin-right: 60px;
+    }
+}

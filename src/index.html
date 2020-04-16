@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <title>piroll</title>
 </head>
 
@@ -14,31 +17,31 @@
         <header class="main-header">
             <div class="container">
                 <a href="index.html" class="main-header__link">
-                    <img src="" alt="logo piroll" class="main-header__image">
+                    <img src="img/icons/logo.png" alt="logo piroll" class="main-header__logo">
                 </a>
                 <nav class="main-nav">
                     <button class="main-nav__mobile-burger" title="open menu"></button>
                     <ul class="main-nav__list">
                         <li class="main-nav__item">
-                            <a href="#" class="main-nav__link">home</a>
+                            <a href="#home" class="main-nav__link active">home</a>
                         </li>
                         <li class="main-nav__item">
-                            <a href="#" class="main-nav__link">about</a>
+                            <a href="#about-us" class="main-nav__link">about</a>
                         </li>
                         <li class="main-nav__item">
-                            <a href="#" class="main-nav__link">work</a>
+                            <a href="#work" class="main-nav__link">work</a>
                         </li>
                         <li class="main-nav__item">
-                            <a href="#" class="main-nav__link">process</a>
+                            <a href="#process" class="main-nav__link">process</a>
                         </li>
                         <li class="main-nav__item">
-                            <a href="#" class="main-nav__link">services</a>
+                            <a href="#services" class="main-nav__link">services</a>
                         </li>
                         <li class="main-nav__item">
-                            <a href="#" class="main-nav__link">testimonials</a>
+                            <a href="#testimonials" class="main-nav__link">testimonials</a>
                         </li>
                         <li class="main-nav__item">
-                            <a href="#" class="main-nav__link">contact</a>
+                            <a href="#contact" class="main-nav__link">contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -46,7 +49,7 @@
         </header>
 
         <main class="main">
-            <section class="intro">
+            <section class="intro" id="home">
                 <div class="container">
                     <div class="intro__content">
                         <h1 class="main-title">We Design and Develop</h1>
@@ -60,7 +63,7 @@
                 </div>
             </section>
     
-            <section class="about-us">
+            <section class="about-us" id="about-us">
                 <div class="container">
                     <h2 class="title">About Us</h2>
                     <p class="text">
@@ -68,7 +71,7 @@
                         A you under Seed appear which good give. Own give air without fowl moveth dry first 
                         heaven fruit, dominion she'd won't very all.
                     </p>
-                    <img src="" alt="signature" class="about-us__image">
+                    <img src="img/signature.png" alt="signature" class="about-us__image">
                 </div>
             </section>
     
@@ -79,17 +82,17 @@
                         <div class="skills__item">
                             <span class="skills__item-text">UI/UX design</span>
                             <span class="skills__item-percent">75%</span>
-                            <div class="skills__item-decor"></div>
+                            <div class="skills__item-decor skills__item-decor--first"></div>
                         </div>
                         <div class="skills__item">
                             <span class="skills__item-text">web development</span>
                             <span class="skills__item-percent">90%</span>
-                            <div class="skills__item-decor"></div>
+                            <div class="skills__item-decor skills__item-decor--second"></div>
                         </div>
                         <div class="skills__item">
                             <span class="skills__item-text">marketing</span>
                             <span class="skills__item-percent">65%</span>
-                            <div class="skills__item-decor"></div>
+                            <div class="skills__item-decor skills__item-decor--third"></div>
                         </div>
                     </div>
                 </div>
@@ -99,23 +102,32 @@
             <section class="achievement">
                 <div class="container">
                     <ul class="achievement__list">
-                        <li class="achivement__item">
-                            <div class="achievement__icon"></div>
+                        <li class="achievement__item">
+                            <svg fill="#fff" class="achievement__icon achievement__icon--portfolio" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="40" height="40">
+                                <path d="M19.732 7.203V4.537h-7.464v2.666H3.205v20.259h25.59V7.203h-9.063zm-6.398-1.599h5.331v1.599h-5.331V5.604zM12.268 8.27h15.461v8.53h-7.997v-2.133h-7.464V16.8H4.271V8.27h7.997zm6.398 7.463v3.199h-5.331v-3.199h5.331zM4.271 26.396v-8.53h7.997v2.133h7.464v-2.133h7.997v8.53H4.272z"/>
+                            </svg>
                             <span class="achievement__number">548</span>
                             <span class="achievement__text">projects completed</span>
                         </li>
-                        <li class="achivement__item">
-                            <div class="achievement__icon"></div>
+                        <li class="achievement__item">
+                            <svg fill="#fff" class="achievement__icon achievement__icon--clock" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="40" height="40">
+                                <path d="M16 3.205C8.934 3.205 3.205 8.934 3.205 16S8.934 28.795 16 28.795 28.795 23.066 28.795 16 23.066 3.205 16 3.205zm0 24.524C9.533 27.729 4.271 22.468 4.271 16S9.532 4.271 16 4.271 27.729 9.532 27.729 16c0 6.467-5.261 11.729-11.729 11.729z"/>
+                                <path d="M16 17.066H9.602v1.066h7.464V7.513H16z"/>
+                            </svg>
                             <span class="achievement__number">1465</span>
                             <span class="achievement__text">working hours</span>
                         </li>
-                        <li class="achivement__item">
-                            <div class="achievement__icon"></div>
+                        <li class="achievement__item">
+                            <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" class="achievement__icon achievement__icon--star" viewBox="0 0 30 30" width="40" height="40">
+                                <path d="M19.38 12.803L16 2.405l-3.381 10.398H1.606l8.925 6.397-3.427 10.395L16 23.147l8.895 6.448L21.469 19.2l8.925-6.397H19.38zm1.077 6.731l2.394 7.261-6.85-4.965-6.851 4.965 2.64-8.005-.637-.456-6.228-4.464h8.471l2.606-8.016 2.605 8.016h8.471l-6.864 4.92.245.744z"/>
+                            </svg>
                             <span class="achievement__number">612</span>
                             <span class="achievement__text">positive feedbacks</span>
                         </li>
-                        <li class="achivement__item">
-                            <div class="achievement__icon"></div>
+                        <li class="achievement__item">
+                            <svg fill="#fff" class="achievement__icon achievement__icon--like" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="40" height="40">
+                                <path d="M21.886 5.115a6.376 6.376 0 016.376 6.376 6.354 6.354 0 01-1.964 4.6L16.001 26.44 5.517 15.904a6.35 6.35 0 01-1.778-4.413 6.376 6.376 0 0112.262-2.452 6.377 6.377 0 015.886-3.924zm0-1.066A7.424 7.424 0 0016 6.933a7.42 7.42 0 00-5.886-2.884c-4.104 0-7.442 3.339-7.442 7.442 0 1.928.737 3.758 2.075 5.152L16 27.952l11.053-11.108a7.368 7.368 0 002.275-5.352c0-4.104-3.339-7.442-7.442-7.442z"/>
+                            </svg>
                             <span class="achievement__number">735</span>
                             <span class="achievement__text">happy clients</span>
                         </li>
@@ -123,7 +135,7 @@
                 </div>
             </section>
 
-            <section class="work">
+            <section class="work" id="work">
                 <div class="work__inner">
                     <div class="work__item">
                         <img src="" alt="work 1" class="work__image">
@@ -161,112 +173,120 @@
                 <button class="work__button">load more work</button>
             </section>
 
-            <section class="process">
+            <section class="process" id="process">
                 <div class="container">
                     <h2 class="title">Our Work Process</h2>
                     <p class="text">
                         Was years it seasons was there form he in in them together over that, 
                         third sixth gathered female creeping bearing behold years.
                     </p>
-                    <video class="process__video" src=""></video>
+                    <div class="process__video-inner">
+                        <video class="process__video" width="100%" height="100%" controls>
+                            <source src="img/video/video.mp4" type="video/mp4">
+                        </video>
+                        <button class="process__play-button"></button>
+                    </div>
                 </div>
             </section>
 
-            <section class="services">
+            <section class="services" id="services">
                 <div class="container">
-                    <div class="services__item">
-                        <div class="services__icon"></div>
-                        <span class="services__sub-title">UI/UX design</span>
-                        <span class="services__description">
-                            Be set fourth land god darkness 
-                            make it wherein own
-                        </span>
-                    </div>
-                    <div class="services__item">
-                        <div class="services__icon"></div>
-                        <span class="services__sub-title">web development</span>
-                        <span class="services__description">
-                            A she'd them bring void moving 
-                            third she'd kind fill
-                        </span>
-                    </div>
-                    <div class="services__item">
-                        <div class="services__icon"></div>
-                        <span class="services__sub-title">app / mobile</span>
-                        <span class="services__description">
-                            Dominion man second spirit he,
-                            earth they're creeping
-                        </span>
-                    </div>
-                    <div class="services__item">
-                        <div class="services__icon"></div>
-                        <span class="services__sub-title">game design</span>
-                        <span class="services__description">
-                            Morning his saying moveth it 
-                            multiply appear life be
-                        </span>
-                    </div>
-                    <div class="services__item">
-                        <div class="services__icon"></div>
-                        <span class="services__sub-title">seo / marketing</span>
-                        <span class="services__description">
-                            Give won't after land fill creeping 
-                            meat you, may
-                        </span>
-                    </div>
-                    <div class="services__item">
-                        <div class="services__icon"></div>
-                        <span class="services__sub-title">photography</span>
-                        <span class="services__description">
-                            Creepeth one seas cattle grass 
-                            give moving saw give
-                        </span>
-                    </div>
-                    <div class="services__item">
-                        <div class="services__icon"></div>
-                        <span class="services__sub-title">graphic design</span>
-                        <span class="services__description">
-                            Open, great whales air rule for, 
-                            fourth life whales
-                        </span>
-                    </div>
-                    <div class="services__item">
-                        <div class="services__icon"></div>
-                        <span class="services__sub-title">illustration</span>
-                        <span class="services__description">
-                            Whales likeness hath, man kind 
-                            for them air two won't
-                        </span>
-                    </div>
+                    <ul class="services__list">
+                        <li class="services__item">
+                            <div class="services__icon services__icon--diamond"></div>
+                            <span class="services__sub-title">UI/UX design</span>
+                            <span class="services__description">
+                                Be set fourth land god darkness 
+                                make it wherein own
+                            </span>
+                        </li>
+                        <li class="services__item">
+                            <div class="services__icon services__icon--arc"></div>
+                            <span class="services__sub-title">web development</span>
+                            <span class="services__description">
+                                A she'd them bring void moving 
+                                third she'd kind fill
+                            </span>
+                        </li>
+                        <li class="services__item">
+                            <div class="services__icon services__icon--phone"></div>
+                            <span class="services__sub-title">app / mobile</span>
+                            <span class="services__description">
+                                Dominion man second spirit he,
+                                earth they're creeping
+                            </span>
+                        </li>
+                        <li class="services__item">
+                            <div class="services__icon services__icon--joy"></div>
+                            <span class="services__sub-title">game design</span>
+                            <span class="services__description">
+                                Morning his saying moveth it 
+                                multiply appear life be
+                            </span>
+                        </li>
+                        <li class="services__item">
+                            <div class="services__icon services__icon--plane"></div>
+                            <span class="services__sub-title">seo / marketing</span>
+                            <span class="services__description">
+                                Give won't after land fill creeping 
+                                meat you, may
+                            </span>
+                        </li>
+                        <li class="services__item">
+                            <div class="services__icon services__icon--star"></div>
+                            <span class="services__sub-title">photography</span>
+                            <span class="services__description">
+                                Creepeth one seas cattle grass 
+                                give moving saw give
+                            </span>
+                        </li>
+                        <li class="services__item">
+                            <div class="services__icon services__icon--magic"></div>
+                            <span class="services__sub-title">graphic design</span>
+                            <span class="services__description">
+                                Open, great whales air rule for, 
+                                fourth life whales
+                            </span>
+                        </li>
+                        <li class="services__item">
+                            <div class="services__icon services__icon--paint"></div>
+                            <span class="services__sub-title">illustration</span>
+                            <span class="services__description">
+                                Whales likeness hath, man kind 
+                                for them air two won't
+                            </span>
+                        </li>
+                    </ul>
                 </div>
             </section>
 
-            <section class="testimonials">
-                <div class="container"></div>
-                <div class="testimonials__slider">
-                    <div class="testimonials__slide">
-                        <p class="testimonials__text">
-                            “ Outstanding job and exceeded all expectations. It was a pleasure 
-                            to work with them on a sizable first project and am looking 
-                            forward to start the next one asap.”
-                        </p>
-                        <span class="testimonials__name">michael hopkins</span>
-                    </div>
-                    <div class="testimonials__slide">
-                        <p class="testimonials__text">
-                            “ Outstanding job and exceeded all expectations. It was a pleasure 
-                            to work with them on a sizable first project and am looking 
-                            forward to start the next one asap.”
-                        </p>
-                        <span class="testimonials__name">Taylor Brown</span>
-                    </div>
-                    <div class="testimonials__slide">
-                        <p class="testimonials__text">
-                            “ Outstanding job and exceeded all expectations. It was a pleasure 
-                            to work with them on a sizable first project and am looking 
-                            forward to start the next one asap.”
-                        </p>
-                        <span class="testimonials__name">jim Johnson</span>
+            <section class="testimonials" id="testimonials">
+                <div class="container">
+                    <div class="testimonials__slider owl-carousel owl-theme">
+                        <div class="slide testimonials__slide">
+                            <p class="testimonials__text">
+                                “ Outstanding job and exceeded all expectations. It was a pleasure 
+                                to work with them on a sizable first project and am looking 
+                                forward to start the next one asap.”
+                            </p>
+                            <span class="testimonials__name">michael hopkins</span>
+                        </div>
+                        <div class="slide testimonials__slide">
+                            <p class="testimonials__text">
+                                “ Outstanding job and exceeded all expectations. It was a pleasure 
+                                to work with them on a sizable first project and am looking 
+                                forward to start the next one asap.”
+                            </p>
+                            <span class="testimonials__name">Taylor Brown</span>
+                        </div>
+                        <div class="slide testimonials__slide">
+                            <p class="testimonials__text">
+                                “ Outstanding job and exceeded all expectations. It was a pleasure 
+                                to work with them on a sizable first project and am looking 
+                                forward to start the next one asap.”
+                            </p>
+                            <span class="testimonials__name">jim Johnson</span>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -276,34 +296,34 @@
                     <ul class="clients__list">
                         <li class="clients__item">
                             <a href="#" class="clients__link">
-                                <img src="" alt="handmade logo" class="clients__logo">
+                                <img src="img/handmade.png" alt="handmade logo" class="clients__logo">
                             </a>
                         </li>
                         <li class="clients__item">
                             <a href="#" class="clients__link">
-                                <img src="" alt="mountain logo" class="clients__logo">
+                                <img src="img/mountain.png" alt="mountain logo" class="clients__logo">
                             </a>
                         </li>
                         <li class="clients__item">
                             <a href="#" class="clients__link">
-                                <img src="" alt="collection logo" class="clients__logo">
+                                <img src="img/collection.png" alt="collection logo" class="clients__logo">
                             </a>
                         </li>
                         <li class="clients__item">
                             <a href="#" class="clients__link">
-                                <img src="" alt="mountainbike logo" class="clients__logo">
+                                <img src="img/mountainbike.png" alt="mountainbike logo" class="clients__logo">
                             </a>
                         </li>
                         <li class="clients__item">
                             <a href="#" class="clients__link">
-                                <img src="" alt="handmade logo" class="clients__logo">
+                                <img src="img/handmade.png" alt="handmade logo" class="clients__logo">
                             </a>
                         </li>
                     </ul>
                 </div>
             </section>
 
-            <section class="contact">
+            <section class="contact" id="contact">
                 <div class="container">
                     <h2 class="title">Need a Project?</h2>
                     <p class="text">
@@ -314,7 +334,7 @@
                         <input class="contact__input" type="text" placeholder="Your name">
                         <input class="contact__input" type="email" placeholder="Your email">
                         <input class="contact__input" type="text" placeholder="Your title">
-                        <textarea class="contact__textarea" cols="30" rows="10" placeholder="Your comment"></textarea>
+                        <textarea class="contact__input contact__input--big" style="width:100%; height:170px;" placeholder="Your comment"></textarea>
                         <button class="button">send message</button>
                     </form>
                 </div>
@@ -334,6 +354,36 @@
                 <div class="main-footer__contacts">
                     <a href="mailto:lovec.cnov@mail.ru" class="main-footer__email">lovec.cnov@mail.ru</a>
                     <a href="tel:89181494996" class="main-footer__number">+7 918 149 49 96</a>
+                </div>
+                <div class="main-footer__links">
+                    <div class="main-footer__menu">
+                        <ul class="main-footer__menu-list">
+                            <li class="main-footer__menu-item">
+                                <a href="#" class="main-footer__menu-link">Projects</a>
+                            </li>
+                            <li class="main-footer__menu-item">
+                                <a href="#" class="main-footer__menu-link">About</a>
+                            </li>
+                            <li class="main-footer__menu-item">
+                                <a href="#" class="main-footer__menu-link">Services</a>
+                            </li>
+                            <li class="main-footer__menu-item">
+                                <a href="#" class="main-footer__menu-link">Carreer</a>
+                            </li>
+                            <li class="main-footer__menu-item">
+                                <a href="#" class="main-footer__menu-link">News</a>
+                            </li>
+                            <li class="main-footer__menu-item">
+                                <a href="#" class="main-footer__menu-link">Events</a>
+                            </li>
+                            <li class="main-footer__menu-item">
+                                <a href="#" class="main-footer__menu-link">Contact</a>
+                            </li>
+                            <li class="main-footer__menu-item">
+                                <a href="#" class="main-footer__menu-link">Legals</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="main-footer__socials">
                     <ul class="main-footer__socials-list">
@@ -359,6 +409,8 @@
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

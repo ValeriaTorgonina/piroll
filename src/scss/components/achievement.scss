@@ -1,0 +1,36 @@
+@import "../variables.scss";
+
+.achievement {
+    padding: 95px 0;
+    background: $lightblue;
+    color: white;
+    text-transform: uppercase;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 235px;
+    }
+
+    &__icon {
+        width: 50px;
+        height: 45px;
+        margin-top: -3px;
+        margin-right: 25px;
+        float: left;
+    }
+
+    &__number {
+        display: block;
+        font-size: 18px;
+        line-height: 15px;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        font-size: 12px;
+    }
+}

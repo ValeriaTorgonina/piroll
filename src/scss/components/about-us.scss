@@ -1,0 +1,16 @@
+.about-us {
+    padding: 100px 0;
+
+    .text {
+        width: 65%;
+        margin-bottom: 35px;
+    }
+
+    &__image {
+        display: block;
+        margin: 0 auto;
+        width: 225px;
+        height: 60px;
+        background-size: contain;
+    }
+}

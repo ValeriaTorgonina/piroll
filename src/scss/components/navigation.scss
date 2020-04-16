@@ -1,0 +1,33 @@
+@import "../variables.scss";
+
+.main-nav {
+    width: 55%;
+
+    &__mobile-burger {
+        display: none;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__link {
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $font-darkgray;
+
+        &.active {
+            color: $lightblue;
+        }
+
+        &:hover {
+            color: $darkgray1;
+        }
+
+        &:active {
+            color: $lightblue;
+        }
+    }
+}
