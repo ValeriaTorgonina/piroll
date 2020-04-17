@@ -89,6 +89,10 @@ h1, h2, h3, p {
     }
 }
 
+.open {
+    display: block;
+}
+
 @media (max-width: 990px) {
 
     .main-title {

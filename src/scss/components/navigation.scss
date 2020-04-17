@@ -13,6 +13,8 @@
     }
 
     &__link {
+        display: inline-block;
+        height: 100%;
         font-size: 12px;
         font-weight: bold;
         text-transform: uppercase;
@@ -20,6 +22,10 @@
 
         &.active {
             color: $lightblue;
+
+            &:hover {
+                color: $darkblue;
+            }
         }
 
         &:hover {
@@ -47,12 +53,17 @@
 
         &__list {
             position: absolute;
-            bottom: 0;
-            right: 0; 
+            display: block;
+            bottom: 0px;
+            right: -200px; 
             transform: translate(0, 100%);
             width: 200px;
             background: $lightgray2;
-            display: none;
+            transition: 0.5s;
+
+            &.open {
+                right: 0
+            }
         }
 
         &__item {
@@ -97,7 +108,7 @@
                 bottom: -10px;
             }
 
-            &.close {
+            &.cross {
                 background: transparent;
 
                 &.main-nav__mobile-burger:before  {

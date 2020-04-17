@@ -8,10 +8,15 @@
     padding: 30px 0;
     background-color: $lightgray2;
     z-index: 3;
+    transition: 0.2s;
 
     .container {
         display: flex;
         justify-content: space-between;
+    }
+
+    &.out {
+        transform: translate(0, -100px);
     }
 
     &__logo {
