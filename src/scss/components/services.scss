@@ -9,6 +9,10 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        
+        @media (max-width: 1060px) {
+            justify-content: space-around;
+        }
     }
 
     &__item {
@@ -70,6 +74,34 @@
 
         &--paint {
             background-image: url("../../img/icons/paint-bucket.svg");
+        }
+    }
+
+    @media (max-width: 990px) {
+        padding: 65px 0;
+        padding-bottom: 0;
+    }
+
+    @media (max-width: 720px) {
+        &__description {
+            font-size: 12px;
+        }
+
+        &__item {
+            max-width: 200px;
+            margin-bottom: 40px;
+        }
+    }
+
+    @media (max-width: 420px) {
+        padding-top: 20px;
+
+        &__icon {
+            margin-bottom: 10px;
+        }
+
+        &__item {
+            margin-bottom: 20px;
         }
     }
 }

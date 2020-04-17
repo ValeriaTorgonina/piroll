@@ -33,4 +33,51 @@
     &__text {
         font-size: 12px;
     }
+
+    @media (max-width: 990px) {
+        padding: 65px 0;
+
+        &__item {
+            width: 25%;
+        }
+
+        &__number {
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+
+        &__text {
+            font-size: 10px;
+        }
+    }
+
+    @media (max-width: 720px) {
+
+        padding: 45px 0;
+        padding-bottom: 25px;
+
+        &__list {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            width: 35%;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+    }
+
+    @media (max-width: 620px) {
+        &__list {
+            display: block;
+            margin: 0 auto;
+        }
+
+        &__item {
+            width: 200px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
 }

@@ -31,6 +31,10 @@
         opacity: 0.6;
     }
 
+    &__contacts {
+        padding: 0 10px;
+    }
+
     &__email {
         display: block;
         margin-bottom: 5px;
@@ -52,5 +56,48 @@
 
     &__menu-item {
         margin-right: 60px;
+    }
+
+    &__links {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media (max-width: 990px) {
+        padding: 50px 0;
+        font-size: 13px;
+    }
+
+    @media (max-width: 740px) {
+
+        .container {
+            flex-wrap: wrap;
+        }
+        &__company {
+            width: 35%;
+            margin-bottom: 20px;
+        }
+
+        &__menu-item,
+        &__socials-item {
+            margin-right: 20px;
+        }
+    }
+
+    @media (max-width: 520px) {
+        &__company {
+            width: 210px;
+        }
+
+        &__contacts {
+            padding: 0px;
+            margin-bottom: 20px;
+        }
+    }
+
+    @media (max-width: 380px) {
+        &__contacts {
+            width: 100%;
+        }
     }
 }

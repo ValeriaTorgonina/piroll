@@ -4,7 +4,6 @@
     background: $lightblue;
 
     &__slider {
-        width: 830px;
         padding-bottom: 50px;
     }
 
@@ -26,6 +25,41 @@
     &__name {
         font-size: 12px;
         text-transform: uppercase;
+    }
+
+    @media (max-width: 990px) {
+        &__text {
+            font-size: 20px; 
+        }
+
+        &__slide {
+            margin-top: 100px;
+            margin-bottom: 65px;
+        }
+    }
+
+    @media (max-width: 720px) {
+        &__text {
+            font-size: 16px; 
+            margin-bottom: 20px;
+        }
+
+        &__slide {
+            margin-bottom: 45px;
+        }
+    }
+
+    @media (max-width: 420px) {
+
+        &__slide {
+            margin-top: 60px;
+            margin-bottom: 35px;
+        }
+
+        &__text {
+            font-size: 14px; 
+            line-height: 30px;
+        }
     }
 }
 

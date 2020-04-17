@@ -9,7 +9,30 @@
     &__logo {
         width: 130px;
         height: 65px;
-        margin: 0 35px;
         object-fit: contain;
+    }
+
+    @media (max-width: 720px) {
+        padding: 40px 0;
+
+        &__logo {
+            width: 100px;
+            height: 50px;
+        }
+    }
+
+    @media (max-width: 520px) {
+        padding-bottom: 20px;
+
+        &__list {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        &__logo {
+            width: 120px;
+            height: 65px;
+            margin-bottom: 20px;
+        }
     }
 }

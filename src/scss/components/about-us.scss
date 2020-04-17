@@ -13,4 +13,19 @@
         height: 60px;
         background-size: contain;
     }
+
+    @media (max-width: 990px) {
+        padding: 65px 0;
+
+        .text {
+            width: 90%;
+        }
+    }
+
+    @media (max-width: 720px) {
+        &__image {
+            width: 155px;
+            height: 40px;
+        }
+    }
 }
