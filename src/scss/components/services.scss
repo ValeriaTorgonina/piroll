@@ -40,41 +40,7 @@
         height: 40px;
         margin: 0 auto;
         margin-bottom: 25px;
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-
-        &--diamond {
-            background-image: url("../../img/icons/diamond.svg");
-        }
-
-        &--arc {
-            background-image: url("../../img/icons/arc.svg");
-        }
-
-        &--phone {
-            background-image: url("../../img/icons/phone.svg");
-        }
-
-        &--joy {
-            background-image: url("../../img/icons/joy.svg");
-        }
-
-        &--plane {
-            background-image: url("../../img/icons/plane.svg");
-        }
-
-        &--star {
-            background-image: url("../../img/icons/star.svg");
-        }
-
-        &--magic {
-            background-image: url("../../img/icons/magic-wand.svg");
-        }
-
-        &--paint {
-            background-image: url("../../img/icons/paint-bucket.svg");
-        }
+        fill: $font-lightgray;
     }
 
     @media (max-width: 990px) {

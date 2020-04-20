@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
@@ -14,39 +14,8 @@
 
 <body>
     <div class="wrapper">
-        <header class="main-header">
-            <div class="container">
-                <a href="index.html" class="main-header__link">
-                    <img src="img/icons/logo.png" alt="logo piroll" class="main-header__logo">
-                </a>
-                <nav class="main-nav">
-                    <button class="main-nav__mobile-burger" title="open menu"></button>
-                    <ul class="main-nav__list">
-                        <li class="main-nav__item">
-                            <a href="#home" class="main-nav__link active">home</a>
-                        </li>
-                        <li class="main-nav__item">
-                            <a href="#about-us" class="main-nav__link">about</a>
-                        </li>
-                        <li class="main-nav__item">
-                            <a href="#work" class="main-nav__link">work</a>
-                        </li>
-                        <li class="main-nav__item">
-                            <a href="#process" class="main-nav__link">process</a>
-                        </li>
-                        <li class="main-nav__item">
-                            <a href="#services" class="main-nav__link">services</a>
-                        </li>
-                        <li class="main-nav__item">
-                            <a href="#testimonials" class="main-nav__link">testimonials</a>
-                        </li>
-                        <li class="main-nav__item">
-                            <a href="#contact" class="main-nav__link">contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+
+        //= template/header.html
 
         <main class="main">
             <section class="intro" id="home">
@@ -103,30 +72,29 @@
                 <div class="container">
                     <ul class="achievement__list">
                         <li class="achievement__item">
-                            <svg fill="#fff" class="achievement__icon achievement__icon--portfolio" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="40" height="40">
-                                <path d="M19.732 7.203V4.537h-7.464v2.666H3.205v20.259h25.59V7.203h-9.063zm-6.398-1.599h5.331v1.599h-5.331V5.604zM12.268 8.27h15.461v8.53h-7.997v-2.133h-7.464V16.8H4.271V8.27h7.997zm6.398 7.463v3.199h-5.331v-3.199h5.331zM4.271 26.396v-8.53h7.997v2.133h7.464v-2.133h7.997v8.53H4.272z"/>
+                            <svg class="achievement__icon">
+                                <use xlink:href="img/sprite.svg#portfolio"></use>
                             </svg>
                             <span class="achievement__number">548</span>
                             <span class="achievement__text">projects completed</span>
                         </li>
                         <li class="achievement__item">
-                            <svg fill="#fff" class="achievement__icon achievement__icon--clock" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="40" height="40">
-                                <path d="M16 3.205C8.934 3.205 3.205 8.934 3.205 16S8.934 28.795 16 28.795 28.795 23.066 28.795 16 23.066 3.205 16 3.205zm0 24.524C9.533 27.729 4.271 22.468 4.271 16S9.532 4.271 16 4.271 27.729 9.532 27.729 16c0 6.467-5.261 11.729-11.729 11.729z"/>
-                                <path d="M16 17.066H9.602v1.066h7.464V7.513H16z"/>
+                            <svg class="achievement__icon">
+                                <use xlink:href="img/sprite.svg#clock"></use>
                             </svg>
                             <span class="achievement__number">1465</span>
                             <span class="achievement__text">working hours</span>
                         </li>
                         <li class="achievement__item">
-                            <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" class="achievement__icon achievement__icon--star" viewBox="0 0 30 30" width="40" height="40">
-                                <path d="M19.38 12.803L16 2.405l-3.381 10.398H1.606l8.925 6.397-3.427 10.395L16 23.147l8.895 6.448L21.469 19.2l8.925-6.397H19.38zm1.077 6.731l2.394 7.261-6.85-4.965-6.851 4.965 2.64-8.005-.637-.456-6.228-4.464h8.471l2.606-8.016 2.605 8.016h8.471l-6.864 4.92.245.744z"/>
+                            <svg class="achievement__icon">
+                                <use xlink:href="img/sprite.svg#star"></use>
                             </svg>
                             <span class="achievement__number">612</span>
                             <span class="achievement__text">positive feedbacks</span>
                         </li>
                         <li class="achievement__item">
-                            <svg fill="#fff" class="achievement__icon achievement__icon--like" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="40" height="40">
-                                <path d="M21.886 5.115a6.376 6.376 0 016.376 6.376 6.354 6.354 0 01-1.964 4.6L16.001 26.44 5.517 15.904a6.35 6.35 0 01-1.778-4.413 6.376 6.376 0 0112.262-2.452 6.377 6.377 0 015.886-3.924zm0-1.066A7.424 7.424 0 0016 6.933a7.42 7.42 0 00-5.886-2.884c-4.104 0-7.442 3.339-7.442 7.442 0 1.928.737 3.758 2.075 5.152L16 27.952l11.053-11.108a7.368 7.368 0 002.275-5.352c0-4.104-3.339-7.442-7.442-7.442z"/>
+                            <svg class="achievement__icon">
+                                <use xlink:href="img/sprite.svg#like"></use>
                             </svg>
                             <span class="achievement__number">735</span>
                             <span class="achievement__text">happy clients</span>
@@ -138,36 +106,76 @@
             <section class="work" id="work">
                 <div class="work__inner">
                     <div class="work__item">
-                        <img src="img/card-bg-1.jpg" height="100%" width="100%" alt="work 1" class="work__image">
-                        <div class="work__icon"></div>
+                        <picture class="work__image">
+                            <source class="lazyload" type="image/webp" data-srcset="img/card-bg-1.webp">
+                            <img class="lazyload" data-src="img/card-bg-1.jpg" height="100%" width="100%" alt="work 1">
+                        </picture>
+                        <svg class="work__icon">
+                            <use xlink:href="img/sprite.svg#look"></use>
+                        </svg>
                     </div>
                     <div class="work__item">
-                        <img src="img/card-bg-2.jpg" height="100%" width="100%" alt="work 2" class="work__image">
-                        <div class="work__icon"></div>
+                        <picture class="work__image">
+                            <source class="lazyload" type="image/webp" data-srcset="img/card-bg-2.webp">
+                            <img class="lazyload" data-src="img/card-bg-2.jpg" height="100%" width="100%" alt="work 2">
+                        </picture>
+                        <svg class="work__icon">
+                            <use xlink:href="img/sprite.svg#look"></use>
+                        </svg>
                     </div>
                     <div class="work__item">
-                        <img src="img/card-bg-3.jpg" height="100%" width="100%" alt="work 3" class="work__image">
-                        <div class="work__icon"></div>
+                        <picture class="work__image">
+                            <source class="lazyload" type="image/webp" data-srcset="img/card-bg-3.webp">
+                            <img class="lazyload" data-src="img/card-bg-3.jpg" height="100%" width="100%" alt="work 3">
+                        </picture>
+                        <svg class="work__icon">
+                            <use xlink:href="img/sprite.svg#look"></use>
+                        </svg>
                     </div>
                     <div class="work__item">
-                        <img src="img/card-bg-4.jpg" height="100%" width="100%" alt="work 4" class="work__image">
-                        <div class="work__icon"></div>
+                        <picture class="work__image">
+                            <source class="lazyload" type="image/webp" data-srcset="img/card-bg-4.webp">
+                            <img class="lazyload" data-src="img/card-bg-4.jpg" height="100%" width="100%" alt="work 4">
+                        </picture>
+                        <svg class="work__icon">
+                            <use xlink:href="img/sprite.svg#look"></use>
+                        </svg>
                     </div>
                     <div class="work__item">
-                        <img src="img/card-bg-5.jpg" height="100%" width="100%" alt="work 5" class="work__image">
-                        <div class="work__icon"></div>
+                        <picture class="work__image">
+                            <source class="lazyload" type="image/webp" data-srcset="img/card-bg-5.webp">
+                            <img class="lazyload" data-src="img/card-bg-5.jpg" height="100%" width="100%" alt="work 5">
+                        </picture>
+                        <svg class="work__icon">
+                            <use xlink:href="img/sprite.svg#look"></use>
+                        </svg>
                     </div>
                     <div class="work__item">
-                        <img src="img/card-bg-6.jpg" height="100%" width="100%" alt="work 6" class="work__image">
-                        <div class="work__icon"></div>
+                        <picture class="work__image">
+                            <source class="lazyload" type="image/webp" data-srcset="img/card-bg-6.webp">
+                            <img class="lazyload" data-src="img/card-bg-6.jpg" height="100%" width="100%" alt="work 6">
+                        </picture>
+                        <svg class="work__icon">
+                            <use xlink:href="img/sprite.svg#look"></use>
+                        </svg>
                     </div>
                     <div class="work__item">
-                        <img src="img/card-bg-7.jpg" height="100%" width="100%" alt="work 7" class="work__image">
-                        <div class="work__icon"></div>
+                        <picture class="work__image">
+                            <source class="lazyload" type="image/webp" data-srcset="img/card-bg-7.webp">
+                            <img class="lazyload" data-src="img/card-bg-7.jpg" height="100%" width="100%" alt="work 7">
+                        </picture>
+                        <svg class="work__icon">
+                            <use xlink:href="img/sprite.svg#look"></use>
+                        </svg>
                     </div>
                     <div class="work__item">
-                        <img src="img/card-bg-8.jpg" height="100%" width="100%" alt="work 8" class="work__image">
-                        <div class="work__icon"></div>
+                        <picture class="work__image">
+                            <source class="lazyload" type="image/webp" data-srcset="img/card-bg-8.webp">
+                            <img class="lazyload" data-src="img/card-bg-8.jpg" height="100%" width="100%" alt="work 8">
+                        </picture>
+                        <svg class="work__icon">
+                            <use xlink:href="img/sprite.svg#look"></use>
+                        </svg>
                     </div>
                 </div>
                 <button class="work__button">load more work</button>
@@ -193,7 +201,9 @@
                 <div class="container">
                     <ul class="services__list">
                         <li class="services__item">
-                            <div class="services__icon services__icon--diamond"></div>
+                            <svg class="services__icon">
+                                <use xlink:href="img/sprite.svg#diamond"></use>
+                            </svg>
                             <span class="services__sub-title">UI/UX design</span>
                             <span class="services__description">
                                 Be set fourth land god darkness 
@@ -201,7 +211,9 @@
                             </span>
                         </li>
                         <li class="services__item">
-                            <div class="services__icon services__icon--arc"></div>
+                            <svg class="services__icon">
+                                <use xlink:href="img/sprite.svg#arc"></use>
+                            </svg>
                             <span class="services__sub-title">web development</span>
                             <span class="services__description">
                                 A she'd them bring void moving 
@@ -209,7 +221,9 @@
                             </span>
                         </li>
                         <li class="services__item">
-                            <div class="services__icon services__icon--phone"></div>
+                            <svg class="services__icon">
+                                <use xlink:href="img/sprite.svg#phone"></use>
+                            </svg>
                             <span class="services__sub-title">app / mobile</span>
                             <span class="services__description">
                                 Dominion man second spirit he,
@@ -217,7 +231,9 @@
                             </span>
                         </li>
                         <li class="services__item">
-                            <div class="services__icon services__icon--joy"></div>
+                            <svg class="services__icon">
+                                <use xlink:href="img/sprite.svg#joy"></use>
+                            </svg>
                             <span class="services__sub-title">game design</span>
                             <span class="services__description">
                                 Morning his saying moveth it 
@@ -225,7 +241,9 @@
                             </span>
                         </li>
                         <li class="services__item">
-                            <div class="services__icon services__icon--plane"></div>
+                            <svg class="services__icon">
+                                <use xlink:href="img/sprite.svg#plane"></use>
+                            </svg>
                             <span class="services__sub-title">seo / marketing</span>
                             <span class="services__description">
                                 Give won't after land fill creeping 
@@ -233,7 +251,9 @@
                             </span>
                         </li>
                         <li class="services__item">
-                            <div class="services__icon services__icon--star"></div>
+                            <svg class="services__icon">
+                                <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
                             <span class="services__sub-title">photography</span>
                             <span class="services__description">
                                 Creepeth one seas cattle grass 
@@ -241,7 +261,9 @@
                             </span>
                         </li>
                         <li class="services__item">
-                            <div class="services__icon services__icon--magic"></div>
+                            <svg class="services__icon">
+                                <use xlink:href="img/sprite.svg#magic-wand"></use>
+                            </svg>
                             <span class="services__sub-title">graphic design</span>
                             <span class="services__description">
                                 Open, great whales air rule for, 
@@ -249,7 +271,9 @@
                             </span>
                         </li>
                         <li class="services__item">
-                            <div class="services__icon services__icon--paint"></div>
+                            <svg class="services__icon">
+                                <use xlink:href="img/sprite.svg#paint-bucket"></use>
+                            </svg>
                             <span class="services__sub-title">illustration</span>
                             <span class="services__description">
                                 Whales likeness hath, man kind 
@@ -264,28 +288,28 @@
                 <div class="container">
                     <div class="testimonials__slider owl-carousel owl-theme">
                         <div class="slide testimonials__slide">
-                            <p class="testimonials__text">
+                            <blockquote class="testimonials__text">
                                 “ Outstanding job and exceeded all expectations. It was a pleasure 
                                 to work with them on a sizable first project and am looking 
                                 forward to start the next one asap.”
-                            </p>
-                            <span class="testimonials__name">michael hopkins</span>
+                            </blockquote>
+                            <cite class="testimonials__name">michael hopkins</cite>
                         </div>
                         <div class="slide testimonials__slide">
-                            <p class="testimonials__text">
+                            <blockquote class="testimonials__text">
                                 “ Outstanding job and exceeded all expectations. It was a pleasure 
                                 to work with them on a sizable first project and am looking 
                                 forward to start the next one asap.”
-                            </p>
-                            <span class="testimonials__name">Taylor Brown</span>
+                            </blockquote>
+                            <cite class="testimonials__name">Taylor Brown</cite>
                         </div>
                         <div class="slide testimonials__slide">
-                            <p class="testimonials__text">
+                            <blockquote class="testimonials__text">
                                 “ Outstanding job and exceeded all expectations. It was a pleasure 
                                 to work with them on a sizable first project and am looking 
                                 forward to start the next one asap.”
-                            </p>
-                            <span class="testimonials__name">jim Johnson</span>
+                            </blockquote>
+                            <cite class="testimonials__name">jim Johnson</cite>
                         </div>
                     </div>
                 </div>
@@ -341,74 +365,8 @@
             </section>
         </main>
 
-        <footer class="main-footer">
-            <div class="container">
-                <div class="main-footer__company">
-                    <span class="main-footer__company-name">Piroll Design, Inc.</span>
-                    <span class="main-footer__company-copyright">
-                        © 2017 Piroll. All rights reserved.
-                        <br>
-                        Designed by robirurk.
-                    </span>
-                </div>
-                <div class="main-footer__contacts">
-                    <a href="mailto:lovec.cnov@mail.ru" class="main-footer__email">lovec.cnov@mail.ru</a>
-                    <a href="tel:89181494996" class="main-footer__number">+7 918 149 49 96</a>
-                </div>
-                <div class="main-footer__menu">
-                    <ul class="main-footer__menu-list">
-                        <li class="main-footer__menu-item">
-                            <a href="#" class="main-footer__menu-link">Projects</a>
-                        </li>
-                        <li class="main-footer__menu-item">
-                            <a href="#" class="main-footer__menu-link">About</a>
-                        </li>
-                        <li class="main-footer__menu-item">
-                            <a href="#" class="main-footer__menu-link">Services</a>
-                        </li>
-                        <li class="main-footer__menu-item">
-                            <a href="#" class="main-footer__menu-link">Carreer</a>
-                        </li>
-                        <li class="main-footer__menu-item">
-                            <a href="#" class="main-footer__menu-link">News</a>
-                        </li>
-                        <li class="main-footer__menu-item">
-                            <a href="#" class="main-footer__menu-link">Events</a>
-                        </li>
-                        <li class="main-footer__menu-item">
-                            <a href="#" class="main-footer__menu-link">Contact</a>
-                        </li>
-                        <li class="main-footer__menu-item">
-                            <a href="#" class="main-footer__menu-link">Legals</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="main-footer__socials">
-                    <ul class="main-footer__socials-list">
-                        <li class="main-footer__socials-item">
-                            <a href="#" class="main-footer__socials-link">Facebook</a>
-                        </li>
-                        <li class="main-footer__socials-item">
-                            <a href="#" class="main-footer__socials-link">Instagram</a>
-                        </li>
-                        <li class="main-footer__socials-item">
-                            <a href="#" class="main-footer__socials-link">Twitter</a>
-                        </li>
-                        <li class="main-footer__socials-item">
-                            <a href="#" class="main-footer__socials-link">Dribble</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
-        <div class="overlay"></div>
-        <div class="popup">
-            <img src="img/card-bg-1.jpg" width="100%" height="100%" alt="work 1" class="popup__image">
-        </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+        //= template/footer.html
+
 </body>
 
 </html>
