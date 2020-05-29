@@ -16,7 +16,6 @@ function scrollHeader() {
 function getMenu() {
   const menu = $('.main-nav__list');
   const burgerBtn = $('.main-nav__mobile-burger');
-  console.log(menu);
   burgerBtn.click(() => {
     menu.toggleClass('open');
     burgerBtn.toggleClass('cross');
